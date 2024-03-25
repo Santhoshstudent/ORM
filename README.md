@@ -37,6 +37,7 @@ class BOOk(models.Model):
 
 class BookAdmin(admin.ModelAdmin):
     list_display=('book_id','book_name','publisher_name','author_name','publish_year')  
+    
 ```
 
 
