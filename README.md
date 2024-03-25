@@ -37,6 +37,15 @@ class BOOk(models.Model):
 
 class BookAdmin(admin.ModelAdmin):
     list_display=('book_id','book_name','publisher_name','author_name','publish_year')  
+
+Include your code here
+
+    Admin.py
+    from django.contrib import admin
+    from .models import BOOk,BookAdmin
+    # Register your models here.
+
+    admin.site.register(BOOk,BookAdmin)
     
 ```
 
