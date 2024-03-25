@@ -24,30 +24,30 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 ...
-admin.py
-from django.contrib import admin
-from .models import Footballplayer,FootballplayerAdmin
-admin.site.register(Footballplayer,FootballplayerAdmin)
-
-models.py
+Models.py
 from django.db import models
 from django.contrib import admin
-class Footballplayer(models.Model):
-    name=models.CharField(max_length=20)
-    role=models.CharField(max_length=10)
-    age=models.IntegerField()
-    experience=models.IntegerField()
-    country=models.CharField(max_length=20)
+# Create your models here.
+class BOOk(models.Model):
+    book_id=models.IntegerField(primary_key=True)
+    book_name=models.CharField(max_length=50)
+    publisher_name=models.CharField(max_length=50)
+    author_name=models.CharField(max_length=50)
+    publish_year=models.DateField()
 
-class FootballplayerAdmin(admin.ModelAdmin):
-    list_display=('name','role','age','experience','country')
-...
+class BookAdmin(admin.ModelAdmin):
+    list_display=('book_id','book_name','publisher_name','author_name','publish_year')  
+```
 
 
 
 ## OUTPUT
 
-![web ocm](https://github.com/Santhoshstudent/ORM/assets/145446853/c0c8cb08-9179-4914-8962-1e3c0e8fe0ca)
+![web 2](https://github.com/Santhoshstudent/ORM/assets/145446853/28800493-4611-4d6f-b501-dc6f520cb19d)
+![web 2 2](https://github.com/Santhoshstudent/ORM/assets/145446853/e9c3db5d-cc87-4eff-918f-1f237eb16e74)
+
+
+
 
 
 
