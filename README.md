@@ -1,4 +1,4 @@
-# Ex02 Django ORM Web Application
+![web 2 2](https://github.com/Santhoshstudent/ORM/assets/145446853/ed7614a8-ae78-4e2f-b1ee-a854c1d2929f)# Ex02 Django ORM Web Application
 ## Date: 
 
 ## AIM
@@ -25,25 +25,40 @@ Execute Django admin and create details for 10 books
 ## PROGRAM
 ...
 Models.py
+
 from django.db import models
+
 from django.contrib import admin
+
 # Create your models here.
+
 class BOOk(models.Model):
+
     book_id=models.IntegerField(primary_key=True)
+    
     book_name=models.CharField(max_length=50)
+    
     publisher_name=models.CharField(max_length=50)
+    
     author_name=models.CharField(max_length=50)
+    
     publish_year=models.DateField()
+    
 
 class BookAdmin(admin.ModelAdmin):
+
     list_display=('book_id','book_name','publisher_name','author_name','publish_year')  
 
 Include your code here
 
     Admin.py
+    
     from django.contrib import admin
+    
     from .models import BOOk,BookAdmin
+    
     # Register your models here.
+    
 
     admin.site.register(BOOk,BookAdmin)
     
@@ -53,8 +68,9 @@ Include your code here
 
 ## OUTPUT
 
-![web 2](https://github.com/Santhoshstudent/ORM/assets/145446853/28800493-4611-4d6f-b501-dc6f520cb19d)
-![web 2 2](https://github.com/Santhoshstudent/ORM/assets/145446853/e9c3db5d-cc87-4eff-918f-1f237eb16e74)
+ [web 2](https://github.com/Santhoshstudent/ORM/assets/145446853/aa81debc-3322-4096-ad27-b206ef1b288a)
+
+ [web 2 2](https://github.com/Santhoshstudent/ORM/assets/145446853/5bf0edf9-2ef1-4512-887d-03ff0693b1df)
 
 
 
