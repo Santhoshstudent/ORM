@@ -1,4 +1,4 @@
-![web 2 2](https://github.com/Santhoshstudent/ORM/assets/145446853/ed7614a8-ae78-4e2f-b1ee-a854c1d2929f)# Ex02 Django ORM Web Application
+# Ex02 Django ORM Web Application
 ## Date: 
 
 ## AIM
