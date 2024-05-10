@@ -8,6 +8,9 @@ To develop a Django application to store and retrieve data from a Book database 
 
 Include your ER diagram here
 
+![image](https://github.com/Santhoshstudent/ORM/assets/145446853/c6c4fa86-9053-459f-83c5-dc9a126b77c4)
+
+
 ## DESIGN STEPS
 
 ### STEP 1:
